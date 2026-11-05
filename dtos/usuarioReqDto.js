@@ -6,7 +6,7 @@ module.exports = {
         return {
             email: body.email,
             senha: body.senha,
-            role: body.role,
+            role: body.role || 'aluno',
             emailVerificado: body.emailVerificado || false
         }
     }
